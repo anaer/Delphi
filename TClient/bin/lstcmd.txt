@@ -1,0 +1,21 @@
+taskkill /f /im chrome.exe
+tasklist
+cd
+taskkill /f /im openfund.exe
+start chrome.exe -user-data-dir="E:\Dropbox\Configuration\Chrome\User Data" --purge-memory-button --enable-internal-flash 
+lsnrctl stop
+sqlplus sys/admin as sysdba
+taskkill /f /im delphi32.exe
+taskkill /f /im oracle.exe
+taskkill /f /im TenSafe_1.exe
+cd D:\TA3\Other\Database\功能开通脚本\分TA
+taskkill /f /im cmd.exe
+start D:\TA3\Prog\OpenFund.exe
+start E:\Program Files\CCleaner\CCleaner.exe
+"E:\Program Files\CCleaner\CCleaner.exe"
+start "E:\Program Files\CCleaner\CCleaner.exe"
+run "E:\Program Files\CCleaner\CCleaner.exe"
+exec "E:\Program Files\CCleaner\CCleaner.exe"
+explorer "E:\Program Files\CCleaner\CCleaner.exe"
+sqlplus sys/admin as sysdba shutdown
+sqlplus sys/admin as sysdba @shutdown

@@ -1,0 +1,14 @@
+fromuser=test1
+touser=test1
+commit=Y
+ANALYZE=Y
+CONSTRAINTS=Y
+DESTROY=N
+GRANTS=N
+IGNORE=Y
+INDEXES=Y
+ROWS=Y
+SKIP_UNUSABLE_INDEXES=N
+BUFFER=10485760
+FILE='E:\DeadCode\TClient\temp\daochu.dmp'
+LOG='E:\DeadCode\TClient\temp\daoru.log'

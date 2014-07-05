@@ -1,0 +1,37 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = Imail.dll URLDLL.dll Oradll.dll SqliteTest.exe STAdll.dll \
+  AppShortCut.dll
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+Imail.dll: MailDll\Imail.dpr
+  $(DCC)
+
+URLDLL.dll: NetWorkDll\URLDLL.dpr
+  $(DCC)
+
+Oradll.dll: OracleDll\Oradll.dpr
+  $(DCC)
+
+SqliteTest.exe: SqliteDll\SqliteTest.dpr
+  $(DCC)
+
+STAdll.dll: TuxedoDll\STAdll.dpr
+  $(DCC)
+
+AppShortCut.dll: AppShortCut\AppShortCut.dpr
+  $(DCC)
+
+
